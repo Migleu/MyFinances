@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Nunito */
+
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.Navbar {
+    width: 80%;
+    justify-content: space-between;
+    margin: 3% 50% 1% 50%;
+    display: flex;
+    text-transform: uppercase;
+    /* border: solid 2px; */
+    transform: translate(-50%, -50%);
+}
+.logo {
+    text-align: center;
+    display: flex;
+}
+.logo #calc {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 20px;
+}
+.linkBar {
+    align-items: center;
+    text-align: center;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.linkBar ul {
+    display: flex;
+}
+.linkBar li {
+    margin-right: 20px;
+    list-style-type: none;
+}
+.linkBar li:hover {
+    border-bottom: solid 1px;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+.Navbar #calendar {
+    width: 20px;
+}
+
+hr {
+    width: 50%;
+    border: solid 1px #000;
+    margin: 0 50% 0 50%;
+    transform: translate(-50%, -50%);
+}
