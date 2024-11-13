@@ -56,6 +56,6 @@ a {
 hr {
     width: 50%;
     border: solid 1px #000;
-    margin: 0 50% 0 50%;
+    margin: 0 50% 2% 50%;
     transform: translate(-50%, -50%);
 }

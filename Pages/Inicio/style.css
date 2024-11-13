@@ -1,9 +1,13 @@
 /* Container */
 .container {
-    width: 80%;
+    position: relative;
     margin: 2% 50% 0 50%;
-    border: solid 1px;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 500px;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
 }
 
 p {
@@ -20,3 +24,36 @@ p:hover {
     background-color: #fff;
     border: solid .5px #000;
 }
+
+.recentesTable {
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+.recentesTable table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+.recentesTable th, .recentesTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+  
+.recentesTable th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+  
+.recentesTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.acoes {
+    display: flex;
+}
+.acoes i {
+    margin-left: 10px;
+}
+  
