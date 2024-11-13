@@ -10,15 +10,16 @@
     border: 1px solid #ddd;
 }
 
-p {
+#verMeses {
     color: #fff;
+    font-size: 20px;
     background-color: #000;
     padding: 5px 20px;
     border-radius: 15px;
-    border: solid .5px #fff;
+    text-transform: uppercase;
     transition: all .5s;
 }
-p:hover {
+#verMeses:hover {
     cursor: pointer;
     color: #000;
     background-color: #fff;
@@ -56,4 +57,28 @@ p:hover {
 .acoes i {
     margin-left: 10px;
 }
-  
+
+#deleteInfo {
+    margin-left: 20px;
+    font-size: 15px;
+    color: #000;
+    padding: 2px 5px;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .5s;
+}
+#deleteInfo:hover {
+    cursor: pointer;
+    background-color: #ff0000c0;
+    color: #fff;
+    border: solid 1px #ff0000;
+}
+
+#editInfo {
+    margin-left: 5px;
+    background-color: #fff;
+}
+#editInfo:hover {
+    transform: translateY(-2px);
+}
