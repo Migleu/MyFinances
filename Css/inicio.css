@@ -1,4 +1,18 @@
-/* Container */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Nunito */
+
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+}
+
+
+/* index.php */
+/* ----------------------------------------------------------------------- */
 .container {
     position: relative;
     margin: 2% 50% 0 50%;
@@ -9,23 +23,26 @@
     padding: 20px;
     border: 1px solid #ddd;
 }
-
-#verMeses {
+.title {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+}
+#addMeses {
     color: #fff;
     font-size: 20px;
     background-color: #000;
     padding: 5px 20px;
     border-radius: 15px;
+    border: solid .5px #000;
     text-transform: uppercase;
     transition: all .5s;
 }
-#verMeses:hover {
+#addMeses:hover {
     cursor: pointer;
     color: #000;
     background-color: #fff;
-    border: solid .5px #000;
 }
-
 .recentesTable {
     overflow-x: auto;
     margin-bottom: 20px;
@@ -54,15 +71,11 @@
 .acoes {
     display: flex;
 }
-.acoes i {
-    margin-left: 10px;
-}
-
 #deleteInfo {
     margin-left: 20px;
     font-size: 15px;
     color: #000;
-    padding: 2px 5px;
+    padding: 2px 15px;
     border: solid 1px;
     border-radius: 10px;
     background-color: #fff;
@@ -70,15 +83,23 @@
 }
 #deleteInfo:hover {
     cursor: pointer;
-    background-color: #ff0000c0;
+    background-color: #ff0000;
     color: #fff;
     border: solid 1px #ff0000;
 }
-
 #editInfo {
     margin-left: 5px;
+    font-size: 15px;
+    color: #000;
+    padding: 2px 15px;
+    border: solid 1px;
+    border-radius: 10px;
     background-color: #fff;
+    transition: all .5s;
 }
 #editInfo:hover {
-    transform: translateY(-2px);
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
 }
+
