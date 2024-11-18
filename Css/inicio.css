@@ -28,7 +28,7 @@
     display: flex;
     margin-bottom: 20px;
 }
-#addMeses {
+#addMes {
     color: #fff;
     font-size: 20px;
     background-color: #000;
@@ -38,7 +38,7 @@
     text-transform: uppercase;
     transition: all .5s;
 }
-#addMeses:hover {
+#addMes:hover {
     cursor: pointer;
     color: #000;
     background-color: #fff;
@@ -71,7 +71,7 @@
 .acoes {
     display: flex;
 }
-#deleteInfo {
+#deleteMes {
     margin-left: 20px;
     font-size: 15px;
     color: #000;
@@ -81,13 +81,13 @@
     background-color: #fff;
     transition: all .5s;
 }
-#deleteInfo:hover {
+#deleteMes:hover {
     cursor: pointer;
     background-color: #ff0000;
     color: #fff;
     border: solid 1px #ff0000;
 }
-#editInfo {
+#editMes {
     margin-left: 5px;
     font-size: 15px;
     color: #000;
@@ -97,7 +97,7 @@
     background-color: #fff;
     transition: all .5s;
 }
-#editInfo:hover {
+#editMes:hover {
     cursor: pointer;
     background-color: #000;
     color: #fff;
