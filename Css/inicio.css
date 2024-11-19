@@ -43,29 +43,29 @@
     color: #000;
     background-color: #fff;
 }
-.recentesTable {
+.mesesTable {
     overflow-x: auto;
     margin-bottom: 20px;
   }
   
-.recentesTable table {
+.mesesTable table {
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #ddd;
     font-size: 16px;
 }
-.recentesTable th, .recentesTable td {
+.mesesTable th, .mesesTable td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
 }
   
-.recentesTable th {
+.mesesTable th {
     background-color: #f0f0f0;
     color: #333;
 }
-  
-.recentesTable tr:nth-child(even) {
+
+.mesesTable tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 .acoes {
