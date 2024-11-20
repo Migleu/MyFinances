@@ -26,7 +26,7 @@ $meses = mysqli_query($conn, $sql);
             <div class="container">
                 <div class="title">
                     <h2>Seus meses adicionados</h2>
-                    <p><a href="./addMes.php" id="addMes">Mês +</a></p>
+                    <p><a href="./addMes.php" class="btnAdd">Mês +</a></p>
                 </div>
                 <div class="mesesTable">
                     <table class="table">
@@ -72,7 +72,7 @@ $meses = mysqli_query($conn, $sql);
                                     <td><?=$finance['resumo_financeiro']; ?></td>
                                     <td><?=$finance['ano']; ?></td>
                                     <div class="addFinanca">
-                                        <td class="btnFinanca"><a href="#">Adicionar finança</a></td>  <!-- Termine isso -->
+                                        <td class="btnFinanca"><a href="verFinanca.php?id=<?=$finance['id']?>">Ver minha finança</a></td>  <!-- Termine isso -->
                                     </div>
                                     <td class="acoes">
                                         <a href="editMes.php?id=<?=$finance['id']?>" id="editMes"><i class="bi bi-pencil-fill"></i></a>

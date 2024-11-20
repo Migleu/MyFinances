@@ -28,7 +28,7 @@
     display: flex;
     margin-bottom: 20px;
 }
-#addMes {
+.btnAdd {
     color: #fff;
     font-size: 20px;
     background-color: #000;
@@ -38,7 +38,7 @@
     text-transform: uppercase;
     transition: all .5s;
 }
-#addMes:hover {
+.btnAdd:hover {
     cursor: pointer;
     color: #000;
     background-color: #fff;
