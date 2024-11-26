@@ -2,7 +2,9 @@
 session_start();
 require_once("conexao.php");
 
-$sql = "SELECT * FROM transacao";
+$mes = $_GET['id'];
+
+$sql = "SELECT * FROM transacao WHERE id_mes = {$mes}";
 $transacao = mysqli_query($conn, $sql);
 ?>
     <!DOCTYPE html>
@@ -25,6 +27,7 @@ $transacao = mysqli_query($conn, $sql);
         <body>
             <div class="container">
                 <div class="title">
+                <a href="./index.php"><i class="bi bi-caret-left-fill"></i></a>
                     <h2>Suas transações deste mês</h2>
                     <p><a href="./addFinanca.php" class="btnAdd">Transação +</a></p>
                 </div>

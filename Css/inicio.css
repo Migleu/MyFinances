@@ -28,6 +28,14 @@
     display: flex;
     margin-bottom: 20px;
 }
+.title i {
+    font-size: 30px;
+    transition: all .5s;
+}
+.title i:hover {
+    cursor: pointer;
+    transform: translateX(-2px);
+}
 .btnAdd {
     color: #fff;
     font-size: 20px;

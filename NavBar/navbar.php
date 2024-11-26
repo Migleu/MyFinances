@@ -2,7 +2,7 @@
  <div class="Navbar">
         <div class="logo">
             <img id="calc" src="./Icons/IconCalc.svg" alt="">
-            <h2>MyFinances</h2>
+            <a href="./index.php"><h2>MyFinances</h2></a>
         </div>
         <div class="linkBar">
             <ul>
