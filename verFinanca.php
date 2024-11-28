@@ -4,7 +4,6 @@ require_once("conexao.php");
 
 $mes = $_GET['id'];
 
-// Consulta para obter as transações e calcular entradas e saídas
 $sql = "SELECT t.*, c.nome AS categoria_nome FROM transacao t
         JOIN categoria c ON t.categoria_movimentacao = c.id
         WHERE t.id_mes = {$mes}";
@@ -15,7 +14,7 @@ $totalEntrada = 0;
 $totalSaida = 0;
 
 while ($finance = mysqli_fetch_assoc($transacao)) {
-    if ($finance['tipo_transacao'] == 0) { 
+    if ($finance['tipo'] == 0) { 
         $totalEntrada += $finance['valor'];
     } else { 
         $totalSaida += $finance['valor'];
@@ -64,8 +63,7 @@ $resumoFinanceiro = $totalEntrada - $totalSaida;
                 </thead>
                 <tbody>
                     <?php 
-                    // Resetando a consulta para buscar novamente as transações
-                    mysqli_data_seek($transacao, 0); // Volta o ponteiro para o início
+                    mysqli_data_seek($transacao, 0); 
                     while ($finance = mysqli_fetch_assoc($transacao)): ?>
                         <tr>
                             <td><?php echo date('d/m/Y', strtotime($finance['data_transacao'])); ?></td>

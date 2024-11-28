@@ -34,7 +34,6 @@ $meses = mysqli_query($conn, $sql);
                         <thead>
                             <tr>
                                 <th>Nome</th>
-                                <th>Resumo Financeiro</th>
                                 <th>Ano</th>
                                 <th></th>
                                 <th>Ações</th>
@@ -44,7 +43,6 @@ $meses = mysqli_query($conn, $sql);
                             <?php foreach ($meses as $finance): ?>
                                 <tr>
                                     <td><?=$finance['nome']; ?></td>
-                                    <td><?=$finance['resumo_financeiro']; ?></td>
                                     <td><?=$finance['ano']; ?></td>
                                     <div class="addFinanca">
                                         <td class="btnFinanca"><a href="verFinanca.php?id=<?=$finance['id']?>">Ver minha finança</a></td>  <!-- Termine isso -->
