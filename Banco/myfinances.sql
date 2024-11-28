@@ -26,7 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Estrutura para tabela `categoria`
 --
-
+CREATE SCHEMA myfinances;
+USE myfinances;
 CREATE TABLE `categoria` (
   `id` int(11) NOT NULL,
   `nome` varchar(200) NOT NULL,
@@ -76,7 +77,7 @@ CREATE TABLE `transacao` (
 
 INSERT INTO `transacao` (`id`, `data_transacao`, `tipo`, `descricao`, `valor`, `categoria_movimentacao`, `id_mes`) VALUES
 (6, '2024-11-25', 1, 'Mercado', 50.00, 0, 2),
-(7, '2024-11-25', 0, 'Gold Girls', 100.00, 2, 2),
+(7, '2024-11-25', 0, 'Lazer', 100.00, 2, 2),
 (8, '2024-11-25', 1, 'Uber', 50.00, 1, 0);
 
 --
