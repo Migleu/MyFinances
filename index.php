@@ -25,6 +25,7 @@ $meses = mysqli_query($conn, $sql);
         <body>
             <div class="container">
                 <div class="title">
+                    <p><a href="./addCategoria.php" class="btnAdd">Categoria +</a></p>
                     <h2>Seus meses adicionados</h2>
                     <p><a href="./addMes.php" class="btnAdd">Mês +</a></p>
                 </div>
@@ -42,33 +43,7 @@ $meses = mysqli_query($conn, $sql);
                         <tbody>
                             <?php foreach ($meses as $finance): ?>
                                 <tr>
-                                    <td><?php    
-                                                if ($finance['nome'] == 0) {
-                                                    echo "<p>Janeiro</p>";
-                                                } else if ($finance['nome'] == 1) {
-                                                    echo "<p>Fevereiro</p>";
-                                                } else if ($finance['nome'] == 2) {
-                                                    echo "<p>Março</p>";
-                                                } else if ($finance['nome'] == 3) {
-                                                    echo "<p>Abril</p>";
-                                                } else if ($finance['nome'] == 4) {
-                                                    echo "<p>Maio</p>";
-                                                } else if ($finance['nome'] == 5) {
-                                                    echo "<p>Junho</p>";
-                                                } else if ($finance['nome'] == 6) {
-                                                    echo "<p>Julho</p>";
-                                                } else if ($finance['nome'] == 7) {
-                                                    echo "<p>Agosto</p>";
-                                                } else if ($finance['nome'] == 8) {
-                                                    echo "<p>Setembro</p>";
-                                                } else if ($finance['nome'] == 9) {
-                                                    echo "<p>Outubro</p>";
-                                                } else if ($finance['nome'] == 10) {
-                                                    echo "<p>Novembro</p>";
-                                                } else if ($finance['nome'] ==11) {
-                                                    echo "<p>Dezembro</p>";
-                                                }
-                                            ?></td>
+                                    <td><?=$finance['nome']; ?></td>
                                     <td><?=$finance['resumo_financeiro']; ?></td>
                                     <td><?=$finance['ano']; ?></td>
                                     <div class="addFinanca">

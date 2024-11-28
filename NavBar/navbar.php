@@ -7,7 +7,7 @@
         <div class="linkBar">
             <ul>
                 <li>Inicio</li>
-                <li>Finanças</a></li>
+                <li>Categorias</a></li>
                 <li>Sobre nós</li>
             </ul>
         </div>
