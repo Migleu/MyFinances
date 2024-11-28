@@ -7,7 +7,7 @@
         <div class="linkBar">
             <ul>
                 <li>Inicio</li>
-                <li>Categorias</a></li>
+                <li><a href="./verCategoria.php">Categorias</a></li>
                 <li>Sobre nós</li>
             </ul>
         </div>
